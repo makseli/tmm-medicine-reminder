@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reminder_medicine/ayarlar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,9 +56,11 @@ class _AnaSayfaState extends State<AnaSayfa> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Ayarlar()));
+            },
         tooltip: 'Ayarlar',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.settings),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
