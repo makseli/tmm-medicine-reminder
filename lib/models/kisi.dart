@@ -1,0 +1,1 @@
+//birden fazla kişi için takip edilmesi amacıyla
